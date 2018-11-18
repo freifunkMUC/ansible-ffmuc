@@ -3,7 +3,7 @@
 Those ansible playbooks use mitogen to run faster, you need to have it installed and maybe adjust the path in `ansible.cfg`.
 
 ## Install mitogen with
-   
+
    pip install mitogen
 
 ## Run Ansible
