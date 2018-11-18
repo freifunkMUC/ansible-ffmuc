@@ -1,0 +1,1327 @@
+{
+    "ansible_all_ipv4_addresses": [
+        "10.80.255.19"
+    ],
+    "ansible_all_ipv6_addresses": [
+        "fe80::5ef3:fcff:fea8:df0e"
+    ],
+    "ansible_apparmor": {
+        "status": "enabled"
+    },
+    "ansible_architecture": "x86_64",
+    "ansible_bios_date": "09/22/2011",
+    "ansible_bios_version": "-[TME154AUS-1.16]-",
+    "ansible_cmdline": {
+        "BOOT_IMAGE": "/boot/vmlinuz-4.15.17-1-pve",
+        "quiet": true,
+        "ro": true,
+        "root": "/dev/mapper/pve-root"
+    },
+    "ansible_date_time": {
+        "date": "2018-11-18",
+        "day": "18",
+        "epoch": "1542540510",
+        "hour": "12",
+        "iso8601": "2018-11-18T11:28:30Z",
+        "iso8601_basic": "20181118T122830604942",
+        "iso8601_basic_short": "20181118T122830",
+        "iso8601_micro": "2018-11-18T11:28:30.605029Z",
+        "minute": "28",
+        "month": "11",
+        "second": "30",
+        "time": "12:28:30",
+        "tz": "CET",
+        "tz_offset": "+0100",
+        "weekday": "Sunday",
+        "weekday_number": "0",
+        "weeknumber": "46",
+        "year": "2018"
+    },
+    "ansible_default_ipv4": {
+        "address": "10.80.255.19",
+        "alias": "vmbr0",
+        "broadcast": "10.80.255.255",
+        "gateway": "10.80.255.1",
+        "interface": "vmbr0",
+        "macaddress": "5c:f3:fc:a8:df:0e",
+        "mtu": 1500,
+        "netmask": "255.255.255.0",
+        "network": "10.80.255.0",
+        "type": "bridge"
+    },
+    "ansible_default_ipv6": {},
+    "ansible_device_links": {
+        "ids": {
+            "dm-0": [
+                "dm-name-gluster_vg_sdb-gluster_lv_engine",
+                "dm-uuid-LVM-CdKhPSHUOhPJw2PKIUCM4wzJeoqsVT8XOyw1ygMXV7Upb1WZAjjRSGfN9vYrEdtR"
+            ],
+            "dm-1": [
+                "dm-name-pve-swap",
+                "dm-uuid-LVM-GcloxwMXW2HeW7YYFA8D8qGcebfn3dr666SryruF7c3pv9AxdIEvAwiK2XpVAEGD"
+            ],
+            "dm-2": [
+                "dm-name-pve-root",
+                "dm-uuid-LVM-GcloxwMXW2HeW7YYFA8D8qGcebfn3dr69iDyaAdzltK3ZugvqjoKk3ayKS5AhXJf"
+            ],
+            "dm-7": [
+                "dm-name-gluster_vg_sdb-gluster_lv_data",
+                "dm-uuid-LVM-CdKhPSHUOhPJw2PKIUCM4wzJeoqsVT8XGlRWvbHHGbl5AQ8eV5ZcOO2sReTxVNfz"
+            ],
+            "dm-8": [
+                "dm-name-gluster_vg_sdb-gluster_lv_isoimages",
+                "dm-uuid-LVM-CdKhPSHUOhPJw2PKIUCM4wzJeoqsVT8XLJxxuBVIdnZ2DvFp3fMj0p10oEdOi0ap"
+            ],
+            "sda": [
+                "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557",
+                "wwn-0x50014ee0585514b0"
+            ],
+            "sda1": [
+                "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557-part1",
+                "wwn-0x50014ee0585514b0-part1"
+            ],
+            "sda2": [
+                "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557-part2",
+                "wwn-0x50014ee0585514b0-part2"
+            ],
+            "sda3": [
+                "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557-part3",
+                "lvm-pv-uuid-HnYCv3-MvF3-tTpf-QnV1-fV9k-6r5x-Nc6kC7",
+                "wwn-0x50014ee0585514b0-part3"
+            ],
+            "sdb": [
+                "ata-Samsung_SSD_850_EVO_500GB_S2RBNX0K123679F",
+                "lvm-pv-uuid-UWfDam-sSlW-FtC6-Asvc-u74f-ZiOt-mfE6Jz",
+                "wwn-0x5002538d428edde7"
+            ],
+            "sdc": [
+                "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0"
+            ],
+            "sdc1": [
+                "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part1"
+            ],
+            "sdc2": [
+                "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part2"
+            ],
+            "sdc3": [
+                "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part3"
+            ],
+            "sdc4": [
+                "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part4"
+            ]
+        },
+        "labels": {
+            "sdc3": [
+                "PVE"
+            ]
+        },
+        "masters": {
+            "dm-10": [
+                "dm-11"
+            ],
+            "dm-3": [
+                "dm-5"
+            ],
+            "dm-4": [
+                "dm-5"
+            ],
+            "dm-5": [
+                "dm-6",
+                "dm-7",
+                "dm-8"
+            ],
+            "dm-9": [
+                "dm-11"
+            ],
+            "sda3": [
+                "dm-1",
+                "dm-10",
+                "dm-2",
+                "dm-9"
+            ],
+            "sdb": [
+                "dm-0",
+                "dm-3",
+                "dm-4"
+            ]
+        },
+        "uuids": {
+            "dm-0": [
+                "f6ec57e0-9017-4d39-af64-59cdd698ab1a"
+            ],
+            "dm-1": [
+                "6d0d1b03-e7be-4670-81fa-fa5dac4e379c"
+            ],
+            "dm-2": [
+                "f3406cbf-ce88-4b97-88ca-166fd2b20e89"
+            ],
+            "dm-7": [
+                "090de45d-7aba-491b-bc37-17de1a89b64d"
+            ],
+            "dm-8": [
+                "e1720211-1e1b-4591-813c-feb44c4947c3"
+            ],
+            "sda2": [
+                "DFC9-3D09"
+            ],
+            "sdc2": [
+                "22C1-C761"
+            ],
+            "sdc3": [
+                "2018-05-16-08-16-54-00"
+            ]
+        }
+    },
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-gluster_vg_sdb-gluster_lv_engine",
+                    "dm-uuid-LVM-CdKhPSHUOhPJw2PKIUCM4wzJeoqsVT8XOyw1ygMXV7Upb1WZAjjRSGfN9vYrEdtR"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "f6ec57e0-9017-4d39-af64-59cdd698ab1a"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "157286400",
+            "sectorsize": "512",
+            "size": "75.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-pve-swap",
+                    "dm-uuid-LVM-GcloxwMXW2HeW7YYFA8D8qGcebfn3dr666SryruF7c3pv9AxdIEvAwiK2XpVAEGD"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "6d0d1b03-e7be-4670-81fa-fa5dac4e379c"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "16777216",
+            "sectorsize": "512",
+            "size": "8.00 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-10": {
+            "holders": [
+                "pve-data"
+            ],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [
+                    "dm-11"
+                ],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "309583872",
+            "sectorsize": "512",
+            "size": "147.62 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-11": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "309583872",
+            "sectorsize": "512",
+            "size": "147.62 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-2": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-pve-root",
+                    "dm-uuid-LVM-GcloxwMXW2HeW7YYFA8D8qGcebfn3dr69iDyaAdzltK3ZugvqjoKk3ayKS5AhXJf"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "f3406cbf-ce88-4b97-88ca-166fd2b20e89"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "121634816",
+            "sectorsize": "512",
+            "size": "58.00 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-3": {
+            "holders": [
+                "gluster_vg_sdb-gluster_thinpool_sdb-tpool"
+            ],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [
+                    "dm-5"
+                ],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "4196352",
+            "sectorsize": "512",
+            "size": "2.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-4": {
+            "holders": [
+                "gluster_vg_sdb-gluster_thinpool_sdb-tpool"
+            ],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [
+                    "dm-5"
+                ],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "507512832",
+            "sectorsize": "512",
+            "size": "242.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-5": {
+            "holders": [
+                "gluster_vg_sdb-gluster_lv_isoimages",
+                "gluster_vg_sdb-gluster_thinpool_sdb",
+                "gluster_vg_sdb-gluster_lv_data"
+            ],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [
+                    "dm-6",
+                    "dm-7",
+                    "dm-8"
+                ],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "507512832",
+            "sectorsize": "512",
+            "size": "242.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-6": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "507512832",
+            "sectorsize": "512",
+            "size": "242.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-7": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-gluster_vg_sdb-gluster_lv_data",
+                    "dm-uuid-LVM-CdKhPSHUOhPJw2PKIUCM4wzJeoqsVT8XGlRWvbHHGbl5AQ8eV5ZcOO2sReTxVNfz"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "090de45d-7aba-491b-bc37-17de1a89b64d"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "461377536",
+            "sectorsize": "512",
+            "size": "220.00 GB",
+            "support_discard": "3145728",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-8": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-gluster_vg_sdb-gluster_lv_isoimages",
+                    "dm-uuid-LVM-CdKhPSHUOhPJw2PKIUCM4wzJeoqsVT8XLJxxuBVIdnZ2DvFp3fMj0p10oEdOi0ap"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "e1720211-1e1b-4591-813c-feb44c4947c3"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "104859648",
+            "sectorsize": "512",
+            "size": "50.00 GB",
+            "support_discard": "3145728",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-9": {
+            "holders": [
+                "pve-data"
+            ],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [
+                    "dm-11"
+                ],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "3162112",
+            "sectorsize": "512",
+            "size": "1.51 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop2": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop3": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop4": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop5": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop6": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop7": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sda": {
+            "holders": [],
+            "host": "SATA controller: Intel Corporation 82801JI (ICH10 Family) SATA AHCI Controller",
+            "links": {
+                "ids": [
+                    "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557",
+                    "wwn-0x50014ee0585514b0"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "WD2502ABYS-23B7A",
+            "partitions": {
+                "sda1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557-part1",
+                            "wwn-0x50014ee0585514b0-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": []
+                    },
+                    "sectors": "2048",
+                    "sectorsize": 512,
+                    "size": "1.00 MB",
+                    "start": "2048",
+                    "uuid": null
+                },
+                "sda2": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557-part2",
+                            "wwn-0x50014ee0585514b0-part2"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "DFC9-3D09"
+                        ]
+                    },
+                    "sectors": "524288",
+                    "sectorsize": 512,
+                    "size": "256.00 MB",
+                    "start": "4096",
+                    "uuid": "DFC9-3D09"
+                },
+                "sda3": {
+                    "holders": [
+                        "pve-swap",
+                        "pve-data_tdata",
+                        "pve-root",
+                        "pve-data_tmeta"
+                    ],
+                    "links": {
+                        "ids": [
+                            "ata-WD2502ABYS-23B7A0_39M4511_42C0463IBM_WD-WMAT16803557-part3",
+                            "lvm-pv-uuid-HnYCv3-MvF3-tTpf-QnV1-fV9k-6r5x-Nc6kC7",
+                            "wwn-0x50014ee0585514b0-part3"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-1",
+                            "dm-10",
+                            "dm-2",
+                            "dm-9"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "487868751",
+                    "sectorsize": 512,
+                    "size": "232.63 GB",
+                    "start": "528384",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "deadline",
+            "sectors": "488397168",
+            "sectorsize": "512",
+            "size": "232.89 GB",
+            "support_discard": "0",
+            "vendor": "ATA",
+            "virtual": 1,
+            "wwn": "0x50014ee0585514b0"
+        },
+        "sdb": {
+            "holders": [
+                "gluster_vg_sdb-gluster_thinpool_sdb_tdata",
+                "gluster_vg_sdb-gluster_lv_engine",
+                "gluster_vg_sdb-gluster_thinpool_sdb_tmeta"
+            ],
+            "host": "SATA controller: Intel Corporation 82801JI (ICH10 Family) SATA AHCI Controller",
+            "links": {
+                "ids": [
+                    "ata-Samsung_SSD_850_EVO_500GB_S2RBNX0K123679F",
+                    "lvm-pv-uuid-UWfDam-sSlW-FtC6-Asvc-u74f-ZiOt-mfE6Jz",
+                    "wwn-0x5002538d428edde7"
+                ],
+                "labels": [],
+                "masters": [
+                    "dm-0",
+                    "dm-3",
+                    "dm-4"
+                ],
+                "uuids": []
+            },
+            "model": "Samsung SSD 850",
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "deadline",
+            "sectors": "976773168",
+            "sectorsize": "512",
+            "size": "465.76 GB",
+            "support_discard": "512",
+            "vendor": "ATA",
+            "virtual": 1,
+            "wwn": "0x5002538d428edde7"
+        },
+        "sdc": {
+            "holders": [],
+            "host": "USB controller: Intel Corporation 82801JI (ICH10 Family) USB2 EHCI Controller #1",
+            "links": {
+                "ids": [
+                    "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "PDU15_16G 87I2.0",
+            "partitions": {
+                "sdc1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": []
+                    },
+                    "sectors": "468",
+                    "sectorsize": 512,
+                    "size": "234.00 KB",
+                    "start": "64",
+                    "uuid": null
+                },
+                "sdc2": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part2"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "22C1-C761"
+                        ]
+                    },
+                    "sectors": "5760",
+                    "sectorsize": 512,
+                    "size": "2.81 MB",
+                    "start": "532",
+                    "uuid": "22C1-C761"
+                },
+                "sdc3": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part3"
+                        ],
+                        "labels": [
+                            "PVE"
+                        ],
+                        "masters": [],
+                        "uuids": [
+                            "2018-05-16-08-16-54-00"
+                        ]
+                    },
+                    "sectors": "1246024",
+                    "sectorsize": 512,
+                    "size": "608.41 MB",
+                    "start": "6292",
+                    "uuid": "2018-05-16-08-16-54-00"
+                },
+                "sdc4": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "usb-UDISK_PDU15_16G_87I2.0_000000000004BD-0:0-part4"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": []
+                    },
+                    "sectors": "600",
+                    "sectorsize": 512,
+                    "size": "300.00 KB",
+                    "start": "1252316",
+                    "uuid": null
+                }
+            },
+            "removable": "1",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "deadline",
+            "sectors": "31588352",
+            "sectorsize": "512",
+            "size": "15.06 GB",
+            "support_discard": "0",
+            "vendor": "UDISK",
+            "virtual": 1
+        }
+    },
+    "ansible_distribution": "Debian",
+    "ansible_distribution_file_parsed": true,
+    "ansible_distribution_file_path": "/etc/os-release",
+    "ansible_distribution_file_variety": "Debian",
+    "ansible_distribution_major_version": "9",
+    "ansible_distribution_release": "stretch",
+    "ansible_distribution_version": "9.4",
+    "ansible_dns": {
+        "nameservers": [
+            "195.30.0.2"
+        ],
+        "search": [
+            "ffmuc.net"
+        ]
+    },
+    "ansible_domain": "ffmuc.net",
+    "ansible_effective_group_id": 0,
+    "ansible_effective_user_id": 0,
+    "ansible_enp0s29f1u2": {
+        "active": false,
+        "device": "enp0s29f1u2",
+        "macaddress": "5e:f3:fc:a8:df:12",
+        "module": "cdc_ether",
+        "mtu": 1500,
+        "pciid": "6-2:1.0",
+        "promisc": false,
+        "type": "ether"
+    },
+    "ansible_enp11s0f0": {
+        "active": true,
+        "device": "enp11s0f0",
+        "macaddress": "5c:f3:fc:a8:df:0e",
+        "module": "igb",
+        "mtu": 1500,
+        "pciid": "0000:0b:00.0",
+        "promisc": true,
+        "speed": 1000,
+        "type": "ether"
+    },
+    "ansible_enp11s0f1": {
+        "active": false,
+        "device": "enp11s0f1",
+        "macaddress": "5c:f3:fc:a8:df:0f",
+        "module": "igb",
+        "mtu": 1500,
+        "pciid": "0000:0b:00.1",
+        "promisc": false,
+        "type": "ether"
+    },
+    "ansible_env": {
+        "HOME": "/root",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LC_CTYPE": "UTF-8",
+        "LC_MESSAGES": "C",
+        "LOGNAME": "root",
+        "MAIL": "/var/mail/root",
+        "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "SHELL": "/bin/bash",
+        "SUDO_COMMAND": "/usr/bin/python -c import codecs,os,sys;_=codecs.decode;exec(_(_(\"eNqFkE9Lw0AQxc/Np8htdunSbhr/QGBB6UE8iBDEHLRIkt3oYrq7bJLG+umdpkKTevA2P96becNLWSZss3DaKUIDz/oR6SpEqKz/JDQJZjjLzq0IZxHn9MQpG5NHNTpyWdtGkXQMfgzZGHoEDGz2GF/nLaZuQyFCkLnvtYEwN3IQ1ZcquzYvajXIy67xy0Kbpdu3H9YA/jk7s83FsLhTvtHWvCTxZohVZqc9Mtymd88cNmK6dvQg1mQqsCnOgWx1a9+VSby17Y0s4yTiV5ecAg3wRO91q0jE4OH+6ZFz/moAo0srsWEarMUbOXQsrVMGmwVfAF14lUsSra7jC8rgWzu8VDlx8mUM+gIOtVfuN2A9zMcqz9z9f+6/X0aTL38AQmCrTA==\".encode(),\"base64\"),\"zip\"))",
+        "SUDO_GID": "0",
+        "SUDO_UID": "0",
+        "SUDO_USER": "root",
+        "TERM": "unknown",
+        "USER": "root",
+        "USERNAME": "root"
+    },
+    "ansible_fips": false,
+    "ansible_form_factor": "Rack Mount Chassis",
+    "ansible_fqdn": "dc3.ffmuc.net",
+    "ansible_hostname": "dc3",
+    "ansible_interfaces": [
+        "vmbr0",
+        "lo",
+        "enp11s0f1",
+        "enp11s0f0",
+        "enp0s29f1u2"
+    ],
+    "ansible_is_chroot": false,
+    "ansible_iscsi_iqn": "iqn.1993-08.org.debian:01:c3e695b1b68",
+    "ansible_kernel": "4.15.17-1-pve",
+    "ansible_lo": {
+        "active": true,
+        "device": "lo",
+        "ipv4": {
+            "address": "127.0.0.1",
+            "broadcast": "host",
+            "netmask": "255.0.0.0",
+            "network": "127.0.0.0"
+        },
+        "ipv6": [
+            {
+                "address": "::1",
+                "prefix": "128",
+                "scope": "host"
+            }
+        ],
+        "mtu": 65536,
+        "promisc": false,
+        "type": "loopback"
+    },
+    "ansible_local": {},
+    "ansible_lsb": {},
+    "ansible_lvm": {
+        "lvs": {
+            "data": {
+                "size_g": "147.62",
+                "vg": "pve"
+            },
+            "gluster_lv_data": {
+                "size_g": "220.00",
+                "vg": "gluster_vg_sdb"
+            },
+            "gluster_lv_engine": {
+                "size_g": "75.00",
+                "vg": "gluster_vg_sdb"
+            },
+            "gluster_lv_isoimages": {
+                "size_g": "50.00",
+                "vg": "gluster_vg_sdb"
+            },
+            "gluster_thinpool_sdb": {
+                "size_g": "242.00",
+                "vg": "gluster_vg_sdb"
+            },
+            "root": {
+                "size_g": "58.00",
+                "vg": "pve"
+            },
+            "swap": {
+                "size_g": "8.00",
+                "vg": "pve"
+            }
+        },
+        "pvs": {
+            "/dev/sda3": {
+                "free_g": "16.00",
+                "size_g": "232.63",
+                "vg": "pve"
+            },
+            "/dev/sdb": {
+                "free_g": "144.76",
+                "size_g": "465.76",
+                "vg": "gluster_vg_sdb"
+            }
+        },
+        "vgs": {
+            "gluster_vg_sdb": {
+                "free_g": "144.76",
+                "num_lvs": "4",
+                "num_pvs": "1",
+                "size_g": "465.76"
+            },
+            "pve": {
+                "free_g": "16.00",
+                "num_lvs": "3",
+                "num_pvs": "1",
+                "size_g": "232.63"
+            }
+        }
+    },
+    "ansible_machine": "x86_64",
+    "ansible_machine_id": "6e925d11b497446e8e7f2ff38e7cf891",
+    "ansible_memfree_mb": 94676,
+    "ansible_memory_mb": {
+        "nocache": {
+            "free": 95244,
+            "used": 1422
+        },
+        "real": {
+            "free": 94676,
+            "total": 96666,
+            "used": 1990
+        },
+        "swap": {
+            "cached": 0,
+            "free": 8191,
+            "total": 8191,
+            "used": 0
+        }
+    },
+    "ansible_memtotal_mb": 96666,
+    "ansible_mounts": [
+        {
+            "block_available": 13718920,
+            "block_size": 4096,
+            "block_total": 14900203,
+            "block_used": 1181283,
+            "device": "/dev/mapper/pve-root",
+            "fstype": "ext4",
+            "inode_available": 3743876,
+            "inode_total": 3801088,
+            "inode_used": 57212,
+            "mount": "/",
+            "options": "rw,relatime,errors=remount-ro,data=ordered",
+            "size_available": 56192696320,
+            "size_total": 61031231488,
+            "uuid": "f3406cbf-ce88-4b97-88ca-166fd2b20e89"
+        },
+        {
+            "block_available": 7676,
+            "block_size": 4096,
+            "block_total": 7680,
+            "block_used": 4,
+            "device": "/dev/fuse",
+            "fstype": "fuse",
+            "inode_available": 9976,
+            "inode_total": 10000,
+            "inode_used": 24,
+            "mount": "/etc/pve",
+            "options": "rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other",
+            "size_available": 31440896,
+            "size_total": 31457280,
+            "uuid": "N/A"
+        }
+    ],
+    "ansible_nodename": "dc3",
+    "ansible_os_family": "Debian",
+    "ansible_pkg_mgr": "apt",
+    "ansible_processor": [
+        "0",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "1",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "2",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "3",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "4",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "5",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "6",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "7",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "8",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "9",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "10",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "11",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "12",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "13",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "14",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "15",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "16",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "17",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "18",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "19",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "20",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "21",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "22",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz",
+        "23",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"
+    ],
+    "ansible_processor_cores": 6,
+    "ansible_processor_count": 2,
+    "ansible_processor_threads_per_core": 2,
+    "ansible_processor_vcpus": 24,
+    "ansible_product_name": "IBM System X iDataPlex dx360 M3 Server -[639124X]-",
+    "ansible_product_serial": "06RMC51",
+    "ansible_product_uuid": "AD868590-269D-11E1-ADCE-5CF3FCA8DF0E",
+    "ansible_product_version": "09",
+    "ansible_python": {
+        "executable": "/usr/bin/python",
+        "has_sslcontext": true,
+        "type": "CPython",
+        "version": {
+            "major": 2,
+            "micro": 13,
+            "minor": 7,
+            "releaselevel": "final",
+            "serial": 0
+        },
+        "version_info": [
+            2,
+            7,
+            13,
+            "final",
+            0
+        ]
+    },
+    "ansible_python_version": "2.7.13",
+    "ansible_real_group_id": 0,
+    "ansible_real_user_id": 0,
+    "ansible_selinux": {
+        "status": "Missing selinux Python library"
+    },
+    "ansible_selinux_python_present": false,
+    "ansible_service_mgr": "systemd",
+    "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJOPa374Cvu7dPtEbrnlkwMOUw1GhePoCagIUCWd/wugooXcTNjsERxzVKsz193BfBZv525Ph+gWTiP7hTKoo6s=",
+    "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIEEUumfDTRP/P7kREe3vKIMzJaibobnHIf5eOGZh9hu7",
+    "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCri24Kyns2qBB3y3H9FI+CECGvTYqqOPCKHI3P6CdYz5ozrRpc++1RROWHmPzbw/jS67JaXNGunWxg11jBJZhR5Y9A0Vmw7+16ZK6bXHxpYkb+xyk+d9KwPA0OToyFd48yU61nbsKiWvPHBduqJDFXQbeFgxc8f/EsYm3KtVdnCuisCN0pL9R2d17CPIm8eLOHKJd6zfqZD0EZjPnmwY3acuzlYxDmSjlYh/4uuqVlXTyrP0COWvvUgpj5nuGFrwzIGfOsCdbd8rOK7fQU5qARYvEmGRW0KaLWLz8bj5KE7xMX+PXxAReKJefQFQLkv9dfBb4UPCiGfFkZzyrmFd/5",
+    "ansible_swapfree_mb": 8191,
+    "ansible_swaptotal_mb": 8191,
+    "ansible_system": "Linux",
+    "ansible_system_capabilities": [
+        "cap_chown",
+        "cap_dac_override",
+        "cap_dac_read_search",
+        "cap_fowner",
+        "cap_fsetid",
+        "cap_kill",
+        "cap_setgid",
+        "cap_setuid",
+        "cap_setpcap",
+        "cap_linux_immutable",
+        "cap_net_bind_service",
+        "cap_net_broadcast",
+        "cap_net_admin",
+        "cap_net_raw",
+        "cap_ipc_lock",
+        "cap_ipc_owner",
+        "cap_sys_module",
+        "cap_sys_rawio",
+        "cap_sys_chroot",
+        "cap_sys_ptrace",
+        "cap_sys_pacct",
+        "cap_sys_admin",
+        "cap_sys_boot",
+        "cap_sys_nice",
+        "cap_sys_resource",
+        "cap_sys_time",
+        "cap_sys_tty_config",
+        "cap_mknod",
+        "cap_lease",
+        "cap_audit_write",
+        "cap_audit_control",
+        "cap_setfcap",
+        "cap_mac_override",
+        "cap_mac_admin",
+        "cap_syslog",
+        "cap_wake_alarm",
+        "cap_block_suspend",
+        "cap_audit_read+ep"
+    ],
+    "ansible_system_capabilities_enforced": "True",
+    "ansible_system_vendor": "IBM",
+    "ansible_uptime_seconds": 50719,
+    "ansible_user_dir": "/root",
+    "ansible_user_gecos": "root",
+    "ansible_user_gid": 0,
+    "ansible_user_id": "root",
+    "ansible_user_shell": "/bin/bash",
+    "ansible_user_uid": 0,
+    "ansible_userspace_architecture": "x86_64",
+    "ansible_userspace_bits": "64",
+    "ansible_virtualization_role": "host",
+    "ansible_virtualization_type": "kvm",
+    "ansible_vmbr0": {
+        "active": true,
+        "device": "vmbr0",
+        "id": "8000.5cf3fca8df0e",
+        "interfaces": [
+            "enp11s0f0"
+        ],
+        "ipv4": {
+            "address": "10.80.255.19",
+            "broadcast": "10.80.255.255",
+            "netmask": "255.255.255.0",
+            "network": "10.80.255.0"
+        },
+        "ipv6": [
+            {
+                "address": "fe80::5ef3:fcff:fea8:df0e",
+                "prefix": "64",
+                "scope": "link"
+            }
+        ],
+        "macaddress": "5c:f3:fc:a8:df:0e",
+        "mtu": 1500,
+        "promisc": false,
+        "stp": false,
+        "type": "bridge"
+    },
+    "gather_subset": [
+        "all"
+    ],
+    "module_setup": true
+}

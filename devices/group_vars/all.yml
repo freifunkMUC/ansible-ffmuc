@@ -1,0 +1,10 @@
+ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -q guardian.ffmuc.net"'
+base_packages:
+    - htop
+    - tcpdump
+    - iftop
+    - wget
+    - ntp
+    - mtr
+    - screen
+    - vim

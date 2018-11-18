@@ -1,0 +1,6 @@
+---
+- name: Install base packages
+  apt:
+      name: "{{ base_packages  }}"
+      state: latest
+
