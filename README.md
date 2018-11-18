@@ -34,4 +34,7 @@ List all variables for a host (dc3):
 
      ansible dc3 -m debug -a "var=hostvars[inventory_hostname]"
 
+## Proxmox handling
 
+All code to handle Proxmox is based on the work of Musee Ullah (https://github.com/lae). 
+The original code can be found here: https://github.com/lae/ansible-role-proxmox/tree/develop
