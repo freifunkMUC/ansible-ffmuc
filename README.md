@@ -4,7 +4,7 @@ Those ansible playbooks use mitogen to run faster, you need to have it installed
 
 ## Install mitogen with
 
-   pip install mitogen
+     pip install mitogen
 
 ## Run Ansible
 
@@ -24,6 +24,14 @@ Those ansible playbooks use mitogen to run faster, you need to have it installed
 
     ansible-playbook playbook-default-install.yml --ask-sudo-pass --extra-vars "target=test"
 
+## Debugging
 
+List group membership:
+
+     ansible localhost -m debug -a 'var=groups'
+
+List all variables for a host (dc3):
+
+     ansible dc3 -m debug -a "var=hostvars[inventory_hostname]"
 
 
