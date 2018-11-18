@@ -1,6 +1,6 @@
 # ansible-ffmuc
 
-Those ansible playbooks use mitogen to run faster, you need to have it installed and maybe adjust the path in ```ansible.cfg````.
+Those ansible playbooks use mitogen to run faster, you need to have it installed and maybe adjust the path in `ansible.cfg`.
 
 ## Install mitogen with
    
