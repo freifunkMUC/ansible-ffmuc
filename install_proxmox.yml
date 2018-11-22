@@ -10,3 +10,10 @@
           clock.nyc.he.net
         ]
       }
+     - {
+        role: lae.proxmox,
+        pve_clustername: FFMUC,
+        pve_group: proxmox,
+        pve_cluster_enabled: yes,
+        pve_reboot_on_kernel_update: true
+      }
