@@ -16,4 +16,4 @@ ntp_servers:
   - lab-ntp02.local iburst
 users:
     - username: awickert
-
+    - username: krombel
