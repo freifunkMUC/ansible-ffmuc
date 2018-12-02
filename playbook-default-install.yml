@@ -6,5 +6,5 @@
   vars_files:
   - "./devices/group_vars/{{ target  }}.yml"
   tasks: 
-  - include: './tasks/install-repos.yml'
   - include: './tasks/install-base.yml'
+  - include: './tasks/create-users.yml'
