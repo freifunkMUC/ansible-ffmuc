@@ -30,3 +30,6 @@ interfaces_ether_interfaces:
     bootproto: static
     address: 192.168.1.50
     netmask: 255.255.255.0
+extra_packages:
+  - pv
+  - ansible
