@@ -17,3 +17,6 @@ ntp_servers:
 users:
     - username: awickert
     - username: krombel
+    - username: lukesix
+    - username: pkoerner
+    - username: virtual
