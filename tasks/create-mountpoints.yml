@@ -10,4 +10,4 @@
     src: /dev/sdb
     fstype: ext4
     opts: noatime
-    state: present 
+    state: mounted
