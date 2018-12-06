@@ -33,3 +33,4 @@ interfaces_ether_interfaces:
 extra_packages:
   - pv
   - ansible
+  - git
