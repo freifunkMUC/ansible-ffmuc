@@ -1,0 +1,4 @@
+---
+gluster_mount_dir: /mnt/gluster_vms
+gluster_brick_dir: /mnt/gluster_local
+gluster_brick_name: gluster_vms
