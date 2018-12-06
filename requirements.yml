@@ -1,0 +1,8 @@
+- name: GlusterFS Role
+  src: geerlingguy.glusterfs
+- name: Interface Management Role
+  src: MichaelRigart.interfaces
+- name: NTP Role
+  src: geerlingguy.ntp
+- name: Proxmox Role
+  src: lae.proxmox
