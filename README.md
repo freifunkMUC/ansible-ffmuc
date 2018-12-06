@@ -38,4 +38,3 @@ List all variables for a host (dc3):
 
      ansible dc3 -m debug -a "var=hostvars[inventory_hostname]"
 
->>>>>>> init
