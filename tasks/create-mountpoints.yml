@@ -1,0 +1,13 @@
+---
+- name: Create a ext4 filesystem on /dev/sdb
+  filesystem:
+    fstype: ext4
+    dev: /dev/sdb
+
+- name: Mounting filesystem
+  mount:
+    path: /mnt/gluster_local
+    src: /dev/sdb
+    fstype: ext4
+    opts: noatime
+    state: mounted

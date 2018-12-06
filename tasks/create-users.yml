@@ -1,0 +1,23 @@
+---
+- name: "Create user accounts"
+  user:
+      name: "{{ item.username }}"
+      groups: "sudo"
+      shell: /bin/bash
+  with_items: "{{ users }}"
+- name: "Add authorized keys"
+  authorized_key:
+      user: "{{ item.username }}"
+      key: "{{ lookup('file', 'files/authorized_keys/'+ item.username + '.key.pub') }}"
+  with_items: "{{ users }}"
+- name: "Set rootpw"
+  user:
+      name: root
+      password: $6$rounds=656000$tglR3kibryCeV.f8$/mpsqDTrRTKy/9Eece1M7LcghhqPab6A.qKOPfEjMEZWsQ7CsO7kI2lVwOpsCdJArKf/RPGMkzw9tOORr73qO1
+- name: "Generate root authorized_keys"
+  authorized_key:
+      user: root
+      key: | 
+        {% for filename in lookup('fileglob', 'files/authorized_keys/*.key.pub', wantlist=true) -%}
+        {{ lookup('file', filename) }}
+        {% endfor %}

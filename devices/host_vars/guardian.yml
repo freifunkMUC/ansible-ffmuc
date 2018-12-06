@@ -1,0 +1,36 @@
+---
+interfaces_ether_interfaces:
+  - device: eth0
+    bootproto: static
+    address: 195.30.94.25
+    netmask: 255.255.255.248
+    gateway: 195.30.94.30
+    dnsnameservers: 8.8.8.8 8.8.4.4
+    dnssearch: ffmuc.net
+    ip6:
+       address: 2001:608:A01::25
+       prefix: 64
+       gateway: 2001:608:A01::31
+  - device: eth1
+    bootproto: static
+    address: 192.168.0.50/24
+    netmask: 255.255.255.0
+    ip6:
+       address: 2001:608:a01:ff02::1
+       prefix: 64
+  - device: eth1:0
+    bootproto: static
+    address: 10.23.42.1
+    netmask: 255.255.255.0
+  - device: eth1:1
+    bootproto: static
+    address: 10.80.255.1
+    netmask: 255.255.255.0
+  - device: eth1:2
+    bootproto: static
+    address: 192.168.1.50
+    netmask: 255.255.255.0
+extra_packages:
+  - pv
+  - ansible
+  - git

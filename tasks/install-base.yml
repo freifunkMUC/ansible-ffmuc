@@ -1,0 +1,12 @@
+---
+- name: Install base packages + extra packages
+  apt:
+      name: "{{ base_packages + extra_packages  }}"
+      state: latest
+  when: extra_packages is defined
+
+- name: Install base packages
+  apt:
+      name: "{{ base_packages }}"
+      state: latest
+  when: extra_packages is not defined
