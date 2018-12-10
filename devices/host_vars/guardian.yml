@@ -34,3 +34,5 @@ extra_packages:
   - pv
   - ansible
   - git
+  - isc-dhcp-server
+  - radvd

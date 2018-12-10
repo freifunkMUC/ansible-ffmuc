@@ -4,7 +4,3 @@ interfaces_ether_interfaces:
       bootproto: static
       address: 172.16.2.3
       netmask: 255.255.255.0
-
-extra_packages:
-    - opensm
-
