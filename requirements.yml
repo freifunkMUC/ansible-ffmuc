@@ -6,3 +6,5 @@
   src: geerlingguy.ntp
 - name: Proxmox Role
   src: lae.proxmox
+- name: DHCP role
+  src: bertvv.dhcp
