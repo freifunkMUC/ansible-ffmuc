@@ -3,8 +3,9 @@
 
   roles:
     - geerlingguy.glusterfs
-
+    - { role: MichaelRigart.interfaces, become: true }
   tasks:
+    - include: './tasks/create-infiniband-network.yml'
     - include: './tasks/create-mountpoints.yml'
     - name: Ensure Gluster brick exist.
       file: "path={{ item }} state=directory mode=0775"
