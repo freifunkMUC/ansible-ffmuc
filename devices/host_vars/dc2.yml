@@ -1,0 +1,10 @@
+---
+interfaces_ether_interfaces:
+    - device: ib0
+      bootproto: static
+      address: 172.16.2.2
+      netmask: 255.255.255.0
+
+extra_packages:
+    - opensm
+
