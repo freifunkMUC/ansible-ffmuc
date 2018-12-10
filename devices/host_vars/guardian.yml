@@ -36,3 +36,18 @@ extra_packages:
   - git
   - isc-dhcp-server
   - radvd
+
+dhcp_global_authoritative: 'authoritative'
+dhcp_global_domain_name: 'ffmuc.net'
+dhcp_subnets:
+  - ip: 10.80.255.0
+    netmask: 255.255.255.0
+    domain_name_servers:
+      - 1.1.1.1
+      - 8.8.8.8
+    routers: 10.80.255.1
+    pools:
+      - default_lease_time: 1800
+        max_lease_time: 3600
+        range_begin: 10.80.255.100
+        range_end: 10.80.255.200
