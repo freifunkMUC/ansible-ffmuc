@@ -1,4 +1,0 @@
----
-- hosts: jumphost
-  roles:
-     - { role: MichaelRigart.interfaces, become: true }

@@ -1,0 +1,10 @@
+---
+- hosts: jumphost
+  pre_tasks:
+     - include: './tasks/set-sysctl.yml'
+     - include: './tasks/enable-dhcpdv4-radvd.yml'
+  roles:
+     - { role: MichaelRigart.interfaces, become: true }
+     - { role: bertvv.dhcp }
+  handlers:
+     - include: './handlers/services.yml'
