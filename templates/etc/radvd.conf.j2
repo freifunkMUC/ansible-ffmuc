@@ -1,0 +1,14 @@
+### Managed by Ansible!!!
+{% for interface in hostvars[inventory_hostname]['radvd']['interface']|sort %} 
+interface {{ interface }}
+{
+        AdvSendAdvert on;
+        prefix ::/64
+        {
+                AdvOnLink on;
+                AdvAutonomous on;
+                AdvRouterAddr on;
+        };
+
+};
+{% endfor %}

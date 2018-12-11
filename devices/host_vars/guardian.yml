@@ -51,3 +51,6 @@ dhcp_subnets:
         max_lease_time: 3600
         range_begin: 10.80.255.100
         range_end: 10.80.255.200
+radvd:
+    interface:
+        - eth1

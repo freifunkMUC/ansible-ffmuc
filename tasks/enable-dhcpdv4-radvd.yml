@@ -1,0 +1,16 @@
+---
+- name: Enabling dhcpdv4
+  lineinfile:
+      dest: /etc/default/isc-dhcp-server
+      regexp: '^INTERFACESv4'
+      line: 'INTERFACESv4="eth1:1"'
+      state: present
+
+- name: Configure radvd
+  template:
+      src: './templates/etc/radvd.conf.j2'
+      dest: '/etc/radvd.conf'
+      owner: root
+      group: root
+      mode: 0644
+  notify: restart radvd
