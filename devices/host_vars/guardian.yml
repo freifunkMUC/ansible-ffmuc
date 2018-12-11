@@ -30,6 +30,10 @@ interfaces_ether_interfaces:
     bootproto: static
     address: 192.168.1.50
     netmask: 255.255.255.0
+  - device: eth1.5
+    bootproto: static
+    address: 10.81.255.1
+    netmask: 255.255.255.0
 extra_packages:
   - pv
   - ansible
@@ -40,17 +44,17 @@ extra_packages:
 dhcp_global_authoritative: 'authoritative'
 dhcp_global_domain_name: 'ffmuc.net'
 dhcp_subnets:
-  - ip: 10.80.255.0
+  - ip: 10.81.255.0
     netmask: 255.255.255.0
     domain_name_servers:
       - 1.1.1.1
       - 8.8.8.8
-    routers: 10.80.255.1
+    routers: 10.81.255.1
     pools:
       - default_lease_time: 1800
         max_lease_time: 3600
-        range_begin: 10.80.255.100
-        range_end: 10.80.255.200
+        range_begin: 10.81.255.100
+        range_end: 10.81.255.200
 radvd:
     interface:
-        - eth1
+        - eth1.5

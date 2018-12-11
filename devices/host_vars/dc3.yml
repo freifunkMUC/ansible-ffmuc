@@ -1,6 +1,28 @@
 ---
 interfaces_ether_interfaces:
     - device: ib0
+      type: infiniband
       bootproto: static
       address: 172.16.2.3
       netmask: 255.255.255.0
+    - device: bond0.5
+      bootproto: none
+interfaces_bridge_interfaces:
+    - device: vmbr5
+      bootproto: manual
+      stp: off
+      mtu: 1500
+      ports: [bond0.5]
+interfaces_bond_interfaces:
+    - device: bond0
+      address: 10.80.255.19
+      netmask: 255.255.255.0
+      bootproto: static
+      gateway: 10.80.255.1
+      bond_mode: active-backup
+      bond_miimon: 100
+      bond_slaves: [enp11s0f0, enp11s0f1]
+      dnsnameservers: 8.8.8.8 8.8.4.4
+      dnssearch: ffmuc.net
+      mtu: 1500
+
