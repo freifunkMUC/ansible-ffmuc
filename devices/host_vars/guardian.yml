@@ -71,3 +71,6 @@ openvpn_log: /var/log/openvpn.log
 openvpn_host: guardian.ffmuc.net
 openvpn_dev: tun
 openvpn_server: 10.8.0.0 255.255.255.0
+openvpn_push_routes_to_client:
+      - route 10.80.255.0 255.255.255.0
+      - route 10.81.255.0 255.255.255.0
