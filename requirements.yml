@@ -1,12 +1,10 @@
-- name: GlusterFS Role
+- name: geerlingguy.glusterfs
   src: geerlingguy.glusterfs
-- name: Interface Management Role
-  src: MichaelRigart.interfaces
-- name: NTP Role
+- name: geerlingguy.ntp
   src: geerlingguy.ntp
-- name: Proxmox Role
+- name: lae.proxmox
   src: lae.proxmox
-- name: DHCP role
+- name: MichaelRigart.interfaces
   src: https://github.com/awlx/ansible-role-interfaces/archive/fix_bonding_and_vlans.tar.gz
 - name: geerlingguy.jenkins
   src: geerlingguy.jenkins
