@@ -1,0 +1,6 @@
+---
+- name: Add users to openvpn
+  vars:
+      openvpn_clients: "{{ item.username }}"
+  with_items:  "{{ users }}"
+

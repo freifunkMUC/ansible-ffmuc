@@ -3,8 +3,10 @@
   pre_tasks:
      - include: './tasks/set-sysctl.yml'
      - include: './tasks/enable-dhcpdv4-radvd.yml'
+     - include. './tasks/add-users-to-openvpn.yml'
   roles:
      - { role: MichaelRigart.interfaces, become: true }
      - { role: bertvv.dhcp }
+     - { role: Stouts.openvpn }
   handlers:
-     - include: './handlers/services.yml'
+      - include: './handlers/services.yml'
