@@ -1,0 +1,8 @@
+- hosts: buildserver
+  vars:
+    jenkins_hostname: jenkins.int.ffmuc.net
+  roles:
+    - role: geerlingguy.java
+      become: yes
+    - role: geerlingguy.jenkins
+      become: yes
