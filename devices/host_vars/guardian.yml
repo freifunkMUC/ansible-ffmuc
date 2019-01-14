@@ -58,3 +58,16 @@ dhcp_subnets:
 radvd:
     interface:
         - eth1.5
+openvpn_enabled: yes
+openvpn_unified_client_profiles: yes
+openvpn_key_country: DE
+openvpn_key_province: BY
+openvpn_key_city: Munich
+openvpn_key_org: ffmuc.net
+openvpn_key_email: muenchen@freifunk.net
+openvpn_key_size: 2048
+openvpn_tls_auth: true
+openvpn_log: /var/log/openvpn.log
+openvpn_host: guardian.ffmuc.net
+openvpn_dev: tun
+openvpn_server: 10.8.0.0 255.255.255.0
