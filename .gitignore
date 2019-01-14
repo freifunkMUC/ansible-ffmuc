@@ -1,3 +1,5 @@
 cache
 fetch
+secrets
+secrets/*
 *.retry

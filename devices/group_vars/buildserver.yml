@@ -1,0 +1,12 @@
+---
+extra_packages:
+    - git
+    - subversion
+    - build-essential
+    - python
+    - gawk
+    - unzip
+    - libncurses-dev
+    - libz-dev
+    - libssl-dev
+    - time

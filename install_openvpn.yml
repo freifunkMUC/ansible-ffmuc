@@ -1,0 +1,6 @@
+---
+- hosts: jumphost
+  pre_tasks:
+          - include: './tasks/add-users-to-openvpn.yml'
+  roles:
+          - { role: Stouts.openvpn }
