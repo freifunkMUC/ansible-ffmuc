@@ -7,4 +7,6 @@
 - name: Proxmox Role
   src: lae.proxmox
 - name: DHCP role
-  src: https://github.com/awlx/ansible-role-interfaces/archive/fix_bonding_and_vlans.tar.gz,develop,MichaelRigart.interfaces
+  src: https://github.com/awlx/ansible-role-interfaces/archive/fix_bonding_and_vlans.tar.gz
+- name: geerlingguy.jenkins
+  src: geerlingguy.jenkins
