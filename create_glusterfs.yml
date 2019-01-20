@@ -1,5 +1,5 @@
 ---
-- hosts: proxmox
+- hosts: kvm
 
   roles:
     - geerlingguy.glusterfs
