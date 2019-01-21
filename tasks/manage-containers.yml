@@ -4,6 +4,7 @@
       path: /srv/docker/netbox
       state: directory
       mode: 0755
+- name: Create Postgres Netbox directory
   file: 
       path: /srv/docker/postgres-netbox
       state: directory
