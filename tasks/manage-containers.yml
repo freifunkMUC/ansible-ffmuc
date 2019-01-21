@@ -1,0 +1,55 @@
+---
+- name: Create Netbox directory
+  file:
+      path: /srv/docker/netbox
+      state: directory
+      mode: 0755
+- name: Create Postgres Netbox directory
+  file: 
+      path: /srv/docker/postgres-netbox
+      state: directory
+      mode: 0755
+- name: Git clone Netbox
+  git:
+      repo: 'https://github.com/ninech/netbox-docker.git'
+      dest: '/srv/docker/netbox'
+
+- name: Copy compose file
+  copy:
+      src: './files/netbox-compose.yml'
+      dest: '/srv/docker/netbox/netbox-ansible-compose.yml'
+
+- name: Install or Upgrade Netbox
+  docker_service:
+      project_name: netbox
+      project_src: '/srv/docker/netbox'
+      files: 'netbox-ansible-compose.yml'
+
+- name: Create Salt PKI directory
+  file:
+      path: /srv/docker/salt/pki
+      state: directory
+      mode: 0755
+
+- name: Create Salt master.d directory
+  file:
+      path: /srv/docker/salt/master.d
+      state: directory
+      mode: 0755
+
+- name: Install Saltmaster
+  docker_container:
+      name: salt-master
+      image: opensuse/salt-master
+      state: started
+      pull: yes
+      restart_policy: always
+      ports:
+          - 10.80.255.1:4505:4505
+          - 10.80.255.1:4506:4506
+          - 10.80.255.1:8000:8000
+      volumes:
+          - /srv/docker/salt:/srv/salt
+          - /srv/docker/salt/pki:/etc/salt/pki
+          - /srv/docker/salt/master.d:/etc/salt/master.d
+
