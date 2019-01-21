@@ -14,3 +14,7 @@
 - name: Stouts.openvpn
   version: develop
   src: https://github.com/awlx/Stouts.openvpn/archive/develop.tar.gz
+- name: geerlingguy.pip
+  src: geerlingguy.pip
+- name: geerlingguy.docker
+  src: geerlingguy.docker

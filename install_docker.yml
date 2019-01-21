@@ -1,0 +1,15 @@
+- hosts: jumphost
+
+  vars:
+    docker_edition: 'ce'
+    docker_package: "docker-{{ docker_edition }}"
+    docker_package_state: latest
+    pip_install_packages:
+      - name: docker
+
+  roles:
+    - geerlingguy.pip
+    - geerlingguy.docker
+
+   tasks:
+       - include: './tasks/manage-containers.yml'
