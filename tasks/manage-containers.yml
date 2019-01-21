@@ -4,6 +4,10 @@
       path: /srv/docker/netbox
       state: directory
       mode: 0755
+  file: 
+      path: /srv/docker/postgres-netbox
+      state: directory
+      mode: 0755
 - name: Git clone Netbox
   git:
       repo: 'https://github.com/ninech/netbox-docker.git'
