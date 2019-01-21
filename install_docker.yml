@@ -6,10 +6,11 @@
     docker_package_state: latest
     pip_install_packages:
       - name: docker
+      - name: docker-compose
 
   roles:
     - geerlingguy.pip
     - geerlingguy.docker
 
-   tasks:
-       - include: './tasks/manage-containers.yml'
+  tasks:
+    - include: './tasks/manage-containers.yml'

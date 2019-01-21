@@ -3,7 +3,14 @@
   git:
       repo: 'https://github.com/ninech/netbox-docker.git'
       dest: '/srv/docker/netbox'
+
+- name: Copy compose file
+  copy:
+      src: './files/netbox-compose.yml'
+      dest: '/srv/docker/netbox/netbox-ansible-compose.yml'
+
 - name: Install or Upgrade Netbox
   docker_service:
       project_name: netbox
-      files: './docker-compose/netbox-compose.yml'
+      project_src: '/srv/docker/netbox'
+      files: 'netbox-ansible-compose.yml'
