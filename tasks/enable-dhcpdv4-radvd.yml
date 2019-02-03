@@ -3,7 +3,7 @@
   lineinfile:
       dest: /etc/default/isc-dhcp-server
       regexp: '^INTERFACESv4'
-      line: 'INTERFACESv4="eth1.5 eth1:1"'
+      line: 'INTERFACESv4="eth1.1000 eth1.3000 eth1:1"'
       state: present
 
 - name: Configure radvd

@@ -1,5 +1,3 @@
-- name: geerlingguy.glusterfs
-  src: geerlingguy.glusterfs
 - name: bertvv.dhcp
   src: bertvv.dhcp
 - name: geerlingguy.ntp
