@@ -30,9 +30,13 @@ interfaces_ether_interfaces:
     bootproto: static
     address: 192.168.1.50
     netmask: 255.255.255.0
-  - device: eth1.5
+  - device: eth1.1000
     bootproto: static
-    address: 10.81.255.1
+    address: 10.80.248.2
+    netmask: 255.255.255.224
+  - device: eth1.3000
+    bootproto: static
+    address: 172.30.0.2
     netmask: 255.255.255.0
 extra_packages:
   - pv
@@ -43,39 +47,27 @@ extra_packages:
   - atftpd
   - syslinux-utils
   - syslinux
+  - virt-manager
 
 dhcp_global_authoritative: 'authoritative'
-dhcp_global_domain_name: 'ffmuc.net'
+dhcp_global_domain_name: 'in.ffmuc.net'
 dhcp_subnets:
-  - ip: 10.80.255.0
-    netmask: 255.255.255.0
+  - ip: 10.80.248.0
+    netmask: 255.255.255.224
     filename: 'pxelinux.0'
-    next_server: 10.80.255.1
+    next_server: 10.80.248.2
     domain_name_servers:
       - 1.1.1.1
       - 8.8.8.8
-    routers: 10.80.255.1
+    routers: 10.80.248.1
     pools:
       - default_lease_time: 1800
         max_lease_time: 3600
-        range_begin: 10.80.255.100
-        range_end: 10.80.255.200
-  - ip: 10.81.255.0
-    netmask: 255.255.255.0
-    filename: 'pxelinux.0'
-    next_server: 10.81.255.1
-    domain_name_servers:
-      - 1.1.1.1
-      - 8.8.8.8
-    routers: 10.81.255.1
-    pools:
-      - default_lease_time: 1800
-        max_lease_time: 3600
-        range_begin: 10.81.255.100
-        range_end: 10.81.255.200
+        range_begin: 10.80.248.25
+        range_end: 10.80.248.30
 radvd:
     interface:
-        - eth1.5
+         - eth1:1
 openvpn_enabled: yes
 openvpn_unified_client_profiles: yes
 openvpn_key_country: DE
@@ -91,4 +83,4 @@ openvpn_dev: tun
 openvpn_server: 10.8.0.0 255.255.255.0
 openvpn_push_routes_to_client:
       - route 10.80.255.0 255.255.255.0
-      - route 10.81.255.0 255.255.255.0
+      - route 10.80.248.0 255.255.255.224
