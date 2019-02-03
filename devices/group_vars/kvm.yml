@@ -1,7 +1,4 @@
 ---
-gluster_brick_dir: /mnt/gluster_local
-gluster_brick_name: gluster_vms
-gluster_mount_dir: /mnt/vms
 extra_packages:
     - opensm
     - libvirt-daemon-system
