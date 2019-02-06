@@ -1,4 +1,4 @@
-- hosts: jumphost
+- hosts: jumphost,docker01.in.ffmuc.net,docker02.in.ffmuc.net
 
   vars:
     docker_edition: 'ce'
