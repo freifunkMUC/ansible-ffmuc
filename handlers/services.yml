@@ -3,3 +3,8 @@
       name: radvd
       state: restarted
       enabled: yes
+- name: restart ssh
+  systemd:
+      name: sshd
+      state: restarted
+      enabled: yes

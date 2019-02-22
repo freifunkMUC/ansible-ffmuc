@@ -45,9 +45,9 @@
       pull: yes
       restart_policy: always
       ports:
-          - 10.80.255.1:4505:4505
-          - 10.80.255.1:4506:4506
-          - 10.80.255.1:8000:8000
+          - 10.80.248.2:4505:4505
+          - 10.80.248.2:4506:4506
+          - 10.80.248.2:8000:8000
       volumes:
           - /srv/docker/salt:/srv/salt
           - /srv/docker/salt/pki:/etc/salt/pki

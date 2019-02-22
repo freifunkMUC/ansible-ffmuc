@@ -5,6 +5,8 @@
   # Add Users 
   vars_files:
   - "./devices/group_vars/{{ target  }}.yml"
+  handlers:
+  - include: './handlers/services.yml'
   tasks: 
   - include: './tasks/install-base.yml'
   - include: './tasks/create-users.yml'

@@ -48,6 +48,7 @@ extra_packages:
   - syslinux-utils
   - syslinux
   - virt-manager
+  - pdns-recursor
 
 dhcp_global_authoritative: 'authoritative'
 dhcp_global_domain_name: 'in.ffmuc.net'
@@ -82,5 +83,7 @@ openvpn_host: guardian.ffmuc.net
 openvpn_dev: tun
 openvpn_server: 10.8.0.0 255.255.255.0
 openvpn_push_routes_to_client:
-      - route 10.80.255.0 255.255.255.0
       - route 10.80.248.0 255.255.255.224
+      - route 10.80.240.0 255.255.255.224
+      - route 172.30.0.0 255.255.255.0
+      - dhcp-option DNS 10.80.248.6
