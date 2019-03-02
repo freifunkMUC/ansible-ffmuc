@@ -78,10 +78,6 @@ dhcp_subnets:
         max_lease_time: 3600
         range_begin: 10.80.240.10
         range_end: 10.80.240.30
-radvd:
-    interface:
-         - eth1.1200
-         - eth1.1000
 openvpn_enabled: yes
 openvpn_unified_client_profiles: yes
 openvpn_key_country: DE
@@ -95,8 +91,14 @@ openvpn_log: /var/log/openvpn.log
 openvpn_host: guardian.ffmuc.net
 openvpn_dev: tun
 openvpn_server: 10.8.0.0 255.255.255.0
+openvpn_server_options:
+      - proto udp6
+      - topology subnet
+      - server-ipv6 fd00::/112
 openvpn_push_routes_to_client:
       - route 10.80.248.0 255.255.255.224
       - route 10.80.240.0 255.255.255.224
       - route 172.30.0.0 255.255.255.0
       - dhcp-option DNS 10.80.248.6
+      - topology subnet
+      - route-ipv6 2001:608:a01:ff02::/64
