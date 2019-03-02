@@ -1,0 +1,9 @@
+---
+- name: Enabling dhcpdv4
+  lineinfile:
+      dest: /etc/default/isc-dhcp-server
+      regexp: '^INTERFACESv4'
+      line: 'INTERFACESv4="eth1.1000 eth1.1200"'
+      state: present
+
+
