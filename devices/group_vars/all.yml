@@ -27,6 +27,6 @@ users:
     - username: pkoerner
     - username: virtual
     - username: max
-saltmaster:
-      ip: 10.80.248.2
-      hostname: saltmaster.in.ffmuc.net
+salt_config:
+    - master: saltmaster.in.ffmuc.net
+    - retry_dns: 30
