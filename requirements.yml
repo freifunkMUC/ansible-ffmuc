@@ -17,3 +17,5 @@
   src: geerlingguy.pip
 - name: geerlingguy.docker
   src: geerlingguy.docker
+- name: ossobv.salt-minion-playbook
+  src: ossobv.salt-minion-playbook

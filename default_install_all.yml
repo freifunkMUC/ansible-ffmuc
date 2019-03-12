@@ -10,3 +10,5 @@
   tasks: 
   - include: './tasks/install-base.yml'
   - include: './tasks/create-users.yml'
+  roles:
+  - ossobv.salt-minion-playbook

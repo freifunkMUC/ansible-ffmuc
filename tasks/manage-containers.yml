@@ -49,7 +49,7 @@
           - 10.80.248.2:4506:4506
           - 10.80.248.2:8000:8000
       volumes:
-          - /srv/docker/salt:/srv/salt
+          - /srv/docker/salt/formulars:/srv/salt
           - /srv/docker/salt/pki:/etc/salt/pki
           - /srv/docker/salt/master.d:/etc/salt/master.d
 
