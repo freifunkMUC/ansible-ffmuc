@@ -8,7 +8,7 @@
   handlers:
   - include: './handlers/services.yml'
   roles:
-  - tenhishadow.salt_minion
+    - tenhishadow.salt_minion
   tasks: 
   - include: './tasks/install-base.yml'
   - include: './tasks/create-users.yml'
