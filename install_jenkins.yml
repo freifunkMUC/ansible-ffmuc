@@ -1,9 +1,0 @@
-- hosts: buildserver
-  vars:
-    jenkins_hostname: buildserver.int.ffmuc.net
-    jenkins_package_state: latest
-  roles:
-    - role: geerlingguy.java
-      become: yes
-    - role: geerlingguy.jenkins
-      become: yes

@@ -8,8 +8,6 @@
 - name: MichaelRigart.interfaces
   version: develop
   src: https://github.com/awlx/ansible-role-interfaces/archive/fix_bonding_and_vlans.tar.gz
-- name: geerlingguy.jenkins
-  src: geerlingguy.jenkins
 - name: Stouts.openvpn
   version: develop
   src: https://github.com/awlx/Stouts.openvpn/archive/develop.tar.gz
