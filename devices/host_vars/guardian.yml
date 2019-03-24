@@ -91,6 +91,9 @@ openvpn_log: /var/log/openvpn.log
 openvpn_host: guardian.ffmuc.net
 openvpn_dev: tun
 openvpn_server: 10.8.0.0 255.255.255.0
+openvpn_clients:
+      - pop_installer
+      - pop_installer2
 openvpn_server_options:
       - proto udp6
       - topology subnet
