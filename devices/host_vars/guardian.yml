@@ -11,30 +11,19 @@ interfaces_ether_interfaces:
        address: 2001:608:A01::25
        prefix: 64
        gateway: 2001:608:A01::31
-  - device: eth1
-    bootproto: static
-    address: 192.168.0.50/24
-    netmask: 255.255.255.0
-    ip6:
-       address: 2001:608:a01:ff02::1
-       prefix: 64
-  - device: eth1:0
+  - device: eth0.2
     bootproto: static
     address: 10.23.42.1
     netmask: 255.255.255.0
-  - device: eth1:2
-    bootproto: static
-    address: 192.168.1.50
-    netmask: 255.255.255.0
-  - device: eth1.1000
+  - device: eth0.1000
     bootproto: static
     address: 10.80.248.2
     netmask: 255.255.255.224
-  - device: eth1.3000
+  - device: eth0.3000
     bootproto: static
     address: 172.30.0.2
     netmask: 255.255.255.0
-  - device: eth1.1200
+  - device: eth0.1200
     bootproto: static
     address: 10.80.240.1
     netmask: 255.255.255.224
@@ -45,8 +34,6 @@ extra_packages:
   - isc-dhcp-server
   - radvd
   - atftpd
-  - syslinux-utils
-  - syslinux
   - virt-manager
   - pdns-recursor
 
