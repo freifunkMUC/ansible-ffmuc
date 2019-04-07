@@ -2,6 +2,7 @@
 
 Those ansible playbooks use mitogen to run faster, you need to have it installed and maybe adjust the path in `ansible.cfg`.
 
+Those playbooks do nothing else than setting up our jumphost. And initialising new machines with a salt-minion.
 ## Install mitogen with
 
      pip install mitogen
@@ -15,10 +16,8 @@ Those ansible playbooks use mitogen to run faster, you need to have it installed
 ### Possible Targets
 
 - all
-- test
-- gateways
-- proxmox
 - jumphost
+- new
 
 ### Testing
 
