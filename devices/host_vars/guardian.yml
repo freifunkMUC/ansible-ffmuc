@@ -86,9 +86,10 @@ openvpn_server_options:
       - topology subnet
       - server-ipv6 fd00::/112
 openvpn_push_routes_to_client:
+      - route 10.80.255.0 255.255.255.0
       - route 10.80.248.0 255.255.255.224
       - route 10.80.240.0 255.255.255.224
       - route 172.30.0.0 255.255.255.0
       - dhcp-option DNS 10.80.248.6
       - topology subnet
-      - route-ipv6 2001:608:a01:ff02::/64
+      - route-ipv6 2001:608:a01::/48
