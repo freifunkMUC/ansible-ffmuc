@@ -2,9 +2,6 @@
   src: bertvv.dhcp
 - name: geerlingguy.ntp
   src: geerlingguy.ntp
-- name: lae.proxmox
-  version: develop
-  src: lae.proxmox
 - name: MichaelRigart.interfaces
   version: develop
   src: https://github.com/awlx/ansible-role-interfaces/archive/fix_bonding_and_vlans.tar.gz
